@@ -1,0 +1,52 @@
+/* Style the body */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Palatino Linotype;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #A078B2;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  /*flex-wrap: wrap;*/
+  flex-flow: row wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Responsive layout? */
+@media screen and (min-width: 700px) {
+  .row {   
+    flex-direction: row;
+  }
+}
+
+ul {
+	list-style-type: none;
+	padding: 10px;
+}
